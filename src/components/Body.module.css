@@ -1,0 +1,100 @@
+.body-main {
+    background-color: rgb(242, 240, 240);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.body-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background-color: #e5e5e5;
+    background-image: url("../assets/my-image/20230610_021524_0000.png");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 10%;
+    transform: translateY(22%);
+}
+
+.greetings{
+    font-weight: bolder;
+    font-size: 115px;
+    font-family: 'Ubuntu Mono', monospace;
+    position: absolute;
+    left:50%;
+    transform: translateY(-110%);
+}
+
+.about {
+    font-weight: bold;
+    font-size: 40px;
+    font-family: 'Ubuntu Mono', monospace;
+    position: absolute;
+    left: 50%;
+    transform: translateY(10%);
+}
+
+.about-des{
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    word-spacing: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateY(38%);
+    text-align: justify;
+    line-height: 1.5;
+    width:40%;
+}
+.resume-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 123, 0);
+    position: relative;
+    left: 15%;
+    transform: translateY(185%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+}
+
+.resume-projects {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(248, 0, 0);
+    position: relative;
+    left: 17%;
+    transform: translateY(185%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+}
+.resume-contacts {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(94, 145, 255);
+    position: relative;
+    left: 19%;
+    transform: translateY(185%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    border: 2px solid black;
+}

@@ -16,12 +16,13 @@
     font-size: 30px;
     left: 6%;
     transform: translateY(-50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .name-title {
     position:absolute;
-    left:25%;
+    left:28%;
     transform: translateY(-40%);
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .ul-list {
     position: absolute;
@@ -31,7 +32,7 @@
     right:5%;
     list-style-type: none;
     font-size: 25px;
-    font-family: HelveticaNeue, Helvetica Neue, helvetica, Sans-Serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .li-list {
@@ -46,13 +47,15 @@
     left:2%;
     transform: translateY(-50%);
      width: 40px;
-    /* Adjust the width and height as desired */
      height: 40px;
     border-radius: 50%;
-    /* Apply a border radius of 50% to create a circle */
-    background-color: #ff9900;
-    /* Add any desired background color */
+    background-color: #ff9900;   
 }
+
+.a-links {
+    color: black;
+    text-decoration: none;
+}    
 
 /* Media queries for responsive layout */
 @media (max-width: 768px) {
