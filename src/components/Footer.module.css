@@ -1,0 +1,33 @@
+.footer-body{
+    height: 35vh;
+    width: 100vw;
+    background-color: rgb(242, 240, 240);
+}
+.footer-list-ul {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around;
+    justify-self: center;
+    list-style-type: none;
+    color:grey;
+    font-weight: 500;
+}
+.linebreak {
+    border: 1px solid grey;
+    margin: 90px;
+    /* Adjust the height to make the line break visible */
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+.icon svg {
+    width: 1.5em;
+    height: 1.5em;
+    color:black;
+}
+.icon a:not(:last-child) {
+    margin-right: 10px;
+}

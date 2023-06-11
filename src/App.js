@@ -1,15 +1,17 @@
 import React from "react"
 import "./App.css"
-import BodyPortfolio from "./components/Body";
-
+import Body from "./components/Body";
+import Footer from  "./components/Footer"
 import Header from "./components/header";
-import { Fragment } from "react";
+import "./App.css"
+
 function App() {
   return (
-    <Fragment>
+    <div className="container">
       <Header />
-      <BodyPortfolio/>
-   </Fragment>
+      <Body />
+      <Footer/>
+   </div>
   );
 }
 
