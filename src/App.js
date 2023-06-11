@@ -1,17 +1,38 @@
-import React from "react"
-import "./App.css"
+import React, { useState, useEffect } from "react";
+import "./App.css";
 import Body from "./components/Body";
-import Footer from  "./components/Footer"
-import Header from "./components/header";
-import "./App.css"
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Resume from "./components/Resume";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+  const [showResume, setShowResume] = useState(false);
+
+  useEffect(() => {
+    // Check if showResume value is stored in localStorage
+    const storedShowResume = localStorage.getItem("showResume");
+    if (storedShowResume) {
+      setShowResume(JSON.parse(storedShowResume));
+    }
+  }, []);
+
+  const resumeHandleChange = () => {
+    setShowResume(true);
+    localStorage.setItem("showResume", JSON.stringify(true)); // Store showResume value in localStorage
+  };
+
   return (
-    <div className="container">
-      <Header />
-      <Body />
-      <Footer/>
-   </div>
+    <Router>
+      <div className="container">
+        <Header onClickResume={resumeHandleChange} />
+        <Routes>
+          <Route path="/components/Resume" element={<Resume />} />
+          <Route path="*" element={<Body />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
