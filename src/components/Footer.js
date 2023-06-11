@@ -12,15 +12,14 @@ const Footer = () => {
             <ul className={classes["footer-list-ul"]}>
                 <li>Phone Number : 
                     <br/>
-                    +91-7985027344
+                    <p className={classes.footercontacts}>+91-7985027344</p>
                 </li>
                 <li >Email :
                     <br />
-                    harikumarsaini778@gmail.com
+                    <p className={classes.footercontacts}>harikumarsaini778@gmail.com</p>
                 </li>
                 <li>
                     Follow Me :
-                    <br />
                     <ul className={classes.icon}>
                     <a href=""><div>  <FontAwesomeIcon icon={faFacebook} /></div></a>
                     <a href=""> <div>  <FontAwesomeIcon icon={faInstagram} /></div></a>

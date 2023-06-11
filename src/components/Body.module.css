@@ -1,7 +1,7 @@
 .body-main {
     background-color: rgb(242, 240, 240);
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +27,7 @@
     font-family: 'Ubuntu Mono', monospace;
     position: absolute;
     left: 50%;
-    transform: translateY(-190%);
+    transform: translateY(-175%);
     animation: raise-greetings 2s ease-in-out;
 }
 
@@ -156,4 +156,10 @@
     100% {
         transform: translateY(-45%);
     }
+}
+.resume-circle:hover,
+.resume-projects:hover,
+.resume-contacts:hover {
+    background-color: white;
+    color: black;
 }
