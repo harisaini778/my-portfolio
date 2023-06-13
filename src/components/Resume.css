@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 .resume-container {
     display: grid;
     grid-template-columns: 1.5fr 0.80fr 1.5fr;
@@ -9,6 +12,7 @@
     margin: 120px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
+    /* overflow-x: hidden; */
 }
 
 .resume-item {
@@ -24,7 +28,7 @@
     border: 1px solid grey;
 }
 .skills-list{
-    margin-bottom: -100px;
+    margin-bottom: -180px;
 }
 .resume-heading{
     position: relative;

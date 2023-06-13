@@ -1,0 +1,16 @@
+.body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-area: 1fr 1fr;
+    gap:10px;
+}
+.project-items{
+    border:1px solid black;
+    text-align: center;
+    padding: 10px;
+}

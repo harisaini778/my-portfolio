@@ -2,7 +2,7 @@ import React from "react";
 import classes from "./Header.module.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ onClickResume }) => {
+const Header = (props) => {
   return (
     <nav className={classes.nav}>
       <div>
@@ -12,14 +12,17 @@ const Header = ({ onClickResume }) => {
       </div>
       <ul className={classes["ul-list"]}>
         <li className={classes["li-list"]}>
-          <Link to="./components/Resume" className={classes["a-links"]} onClick={onClickResume}>
+          <Link to="./components/Resume" className={classes["a-links"]} onClick={props.onClickResume}>
             Resume<span className={classes.span}>|</span>
           </Link>
         </li>
         <li className={classes["li-list"]}>
-          <a href="#" className={classes["a-links"]}>
+          {/* <a href="#" className={classes["a-links"]}>
             Projects<span className={classes.span}>|</span>
-          </a>
+          </a> */}
+            <Link to="./components/Project" className={classes["a-links"]} onClick={props.onClickProject}>
+            Projects<span className={classes.span}>|</span>
+          </Link>
         </li>
         <li className={classes["li-list"]}>
           <a href="#" className={classes["a-links"]}>

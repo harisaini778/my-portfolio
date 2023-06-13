@@ -1,5 +1,6 @@
 import React from "react";
 import "./Resume.css";
+import Skills from "./Skills";
 
 const Resume = () => {
     return (
@@ -138,8 +139,8 @@ const Resume = () => {
       <div className="resume-item">
               <p className="resume-details"></p>
       </div>
-          <div className="resume-item">
-          <ul className="skills-list">
+          <div className="resume-item skills-list">
+          {/* <ul className="skills-list">
             <li className="resume-details last-col-items">HTML</li> 
             <li className="resume-details last-col-items">CSS</li>              
             <li className="resume-details last-col-items">JavaScript</li>
@@ -147,7 +148,8 @@ const Resume = () => {
           <li className="resume-details last-col-items">React</li>
           <li className="resume-details last-col-items">Responsive Design</li>
           <li className="resume-details last-col-items">Problem Solving</li>
-        </ul>
+        </ul> */}
+             <Skills/>       
           </div> 
             </div>    
      </div>

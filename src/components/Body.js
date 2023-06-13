@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import classes from "./Body.module.css";
 
 const Body = () => {
@@ -14,10 +15,16 @@ const Body = () => {
           with industry trends to ensure modern and impactful designs. My attention to detail and commitment to exceptional
           user experiences drive my work.
         </p>
-          </div>
-      <div className={classes["resume-circle"]}>Resume</div>
-      <div className={classes["resume-projects"]}>Projects</div>
-      <div className={classes["resume-contacts"]}>Contact</div>
+      </div>
+      <Link to="/components/Resume" className={classes["resume-circle"]}>
+        Resume
+      </Link>
+      <Link to="/components/Project" className={classes["resume-projects"]}>
+        Projects
+      </Link>
+      <Link to="/contact" className={classes["resume-contacts"]}>
+        Contact
+      </Link>
     </div>
   );
 };
