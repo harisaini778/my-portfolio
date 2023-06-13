@@ -5,11 +5,13 @@ import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Resume from "./components/Resume";
 import Project from "./components/Project";
+import Contact from "./components/Contact";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [showResume, setShowResume] = useState(false);
   const [showProject, setShowProject] = useState(false);
+  const [showContact, setShowContact] = useState(false);
 
   useEffect(() => {
     // Check if showResume value is stored in localStorage
@@ -26,6 +28,13 @@ function App() {
     }
    }, []);
 
+   useEffect(() => {
+    const storedShowContact = localStorage.getItem("showContact");
+    if (storedShowContact) {
+      setShowProject(JSON.parse(storedShowContact));
+    }
+   }, []);
+
   const resumeHandleChange = () => {
     setShowResume(true);
     localStorage.setItem("showResume", JSON.stringify(true)); // Store showResume value in localStorage
@@ -36,13 +45,21 @@ function App() {
     localStorage.setItem("showProject", JSON.stringify(true));
   }
 
+  const contactHandleChange = () => {
+    setShowContact(true);
+    localStorage.setItem("showContact", JSON.stringify(true));
+  }
+
+
   return (
     <Router>
       <div className="container">
-        <Header onClickResume={resumeHandleChange} onClickProject ={projectHandleChange} />
+        <Header onClickResume={resumeHandleChange} onClickProject={projectHandleChange}
+        onClickContact ={contactHandleChange} />
         <Routes>
           <Route path="/components/Resume" element={<Resume />} />
-          <Route path="/components/Project" element={<Project/>}/>
+          <Route path="/components/Project" element={<Project />} />
+          <Route path="/components/Contact" element={<Contact/>}/>
           <Route path="*" element={<Body />} />
         </Routes>
         <Footer />

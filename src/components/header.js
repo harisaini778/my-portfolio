@@ -10,8 +10,13 @@ const Header = (props) => {
         <h2 className={classes.name}>Hari Kumar Saini</h2>
         <p className={classes["name-title"]}>Web Developer</p>
       </div>
-      <ul className={classes["ul-list"]}>
-        <li className={classes["li-list"]}>
+          <ul className={classes["ul-list"]}>
+            <li className={classes["li-list"]}>
+          <Link to="/*" className={classes["a-links"]} onClick={props.onClickResume}>
+            Home<span className={classes.span}>|</span>
+          </Link>
+        </li>
+              <li className={classes["li-list"]}>
           <Link to="./components/Resume" className={classes["a-links"]} onClick={props.onClickResume}>
             Resume<span className={classes.span}>|</span>
           </Link>
@@ -25,9 +30,12 @@ const Header = (props) => {
           </Link>
         </li>
         <li className={classes["li-list"]}>
-          <a href="#" className={classes["a-links"]}>
+          {/* <a href="#" className={classes["a-links"]}>
             Contact
-          </a>
+          </a> */}
+         <Link to="./components/Contact" className={classes["a-links"]} onClick={props.onClickContact}>
+            Contact<span className={classes.span}></span>
+          </Link>
         </li>
       </ul>
     </nav>
