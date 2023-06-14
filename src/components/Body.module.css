@@ -176,34 +176,94 @@
 @media screen and (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .body-img {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-47%,-70%);
+    animation: raise-body-img 2s ease-in-out;
   }
+@keyframes raise-body-img {
+    0% {
+        transform: translate(-47%,-70%);
+    }
 
+    100% {
+        transform: translate(-47%,-73%);
+    }
+}
   .greetings {
-    font-size: 60px;
-    transform: translateY(-150%);
+    font-size: 40px;
+    transform: translateY(-60%);
+    left:40%;
+    position: absolute;
+    animation: raise-greetings 2s ease-in-out;
+  }
+  @keyframes raise-greetings {
+      0% {
+          transform: translateY(-60%);
+      }
+
+      100% {
+          transform: translateY(-65%);
+      }
   }
 
   .about {
     font-size: 30px;
-    transform: translateY(-175%);
+    transform: translateY(70%);
+    left:28%;
+    position:absolute;
+    animation: raise-about 2s ease-in-out;
   }
 
+  @keyframes raise-about {
+    0% {
+        transform: translateY(70%);
+    }
+    100% {
+        transform: translateY(50%);
+    }
+  }
   .about-des {
     font-size: 12px;
     width: 80%;
-    transform: translateY(-20%);
+    position:absolute;
+    transform: translateY(35%);
+    left:15%;
+    animation: raise-about-des 2s ease-in-out;
+  }
+  @keyframes raise-about-des {
+  0%{
+    transform: translateY(35%);
+  }
+  100%{
+    transform:translateY(30%);
+  }
   }
 
   .resume-circle,
   .resume-projects,
   .resume-contacts {
-    width: 100px;
-    height: 100px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 60px;
+    height: 60px;
+    left: 3%;
+    transform: translateY(420%);
+    font-size: 10px;
+    margin-left: 4px;
+    animation: raise-resume 2s ease-in-out;
+  }
+  @keyframes raise-resume {
+    0%{
+    transform: translateY(420%)
+    }
+    100%{
+        transform: translateY(410%)
+    }
+  }
+  .resume-circle:hover,
+  .resume-projects:hover,
+  .resume-contacts:hover {
+      background-color: white;
+      color: black;
   }
 }
