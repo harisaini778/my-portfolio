@@ -228,16 +228,16 @@
     font-size: 12px;
     width: 80%;
     position:absolute;
-    transform: translateY(25%);
+    transform: translateY(35%);
     left:15%;
     animation: raise-about-des 2s ease-in-out;
   }
   @keyframes raise-about-des {
   0%{
-    transform: translateY(25%);
+    transform: translateY(35%);
   }
   100%{
-    transform:translateY(20%);
+    transform:translateY(30%);
   }
   }
 
@@ -246,7 +246,7 @@
   .resume-contacts {
     width: 100px;
     height: 100px;
-    left: 3%;
+    left: 2%;
     transform: translateY(300%);
     font-size: 14px;
     margin-left: 4px;

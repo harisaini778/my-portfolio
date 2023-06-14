@@ -14,7 +14,7 @@
 .name {
     position: absolute;
     font-size: 25px;
-    left: 6%;
+    left: 8%;
     transform: translateY(-50%);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -46,7 +46,7 @@
 }
 .badge-name{
     position: absolute;
-    left:2%;
+    left:3%;
     transform: translateY(-50%);
      width: 40px;
      height: 40px;
@@ -91,7 +91,7 @@
         .li-list {
             position: relative;
             transform: translateY(0%);
-            left:5%;
+            left:3%;
             color: black;
         }
     
