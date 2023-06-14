@@ -12,6 +12,10 @@ function App() {
   const [showResume, setShowResume] = useState(false);
   const [showProject, setShowProject] = useState(false);
   const [showContact, setShowContact] = useState(false);
+  
+  console.log(showResume);
+  console.log(showProject);
+  console.log(showContact);
 
   useEffect(() => {
     // Check if showResume value is stored in localStorage
