@@ -18,6 +18,8 @@ body {
 .resume-item {
     padding: 10px;
     text-align: center;
+    word-wrap: break-word;
+    /* Added */
 }
 
 .last-col-items {
@@ -38,11 +40,15 @@ body {
     left: 19.5%;
     transform: translateY(100%);
     font-size: 40px;
+    word-wrap: break-word;
+    /* Added */
 }
 
 .class {
     color: gray;
     font-size: medium;
+    word-wrap: break-word;
+    /* Added */
 }
 
 /* Styles for smaller screens */
@@ -56,9 +62,13 @@ body {
     .resume-heading {
         left: 10%;
         font-size: 30px;
+        word-wrap: break-word;
+        /* Added */
     }
 
     .class {
         font-size: small;
+        word-wrap: break-word;
+        /* Added */
     }
 }
