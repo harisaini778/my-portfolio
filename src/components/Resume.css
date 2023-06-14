@@ -59,8 +59,30 @@ body {
         /* Added */
     }
 
+    .resume-item {
+        padding: 10px;
+        text-align: center;
+        word-wrap: break-word;
+        /* Added */
+    }
+
+    .last-col-items {
+        text-align: left;
+    }
+
+    .line {
+        margin-top: 30px;
+        border: 1px solid grey;
+    }
+
+    .skills-list {
+        margin-bottom: -180px;
+    }
+
     .resume-heading {
+        position: relative;
         left: 10%;
+        transform: translateY(100%);
         font-size: 30px;
         word-wrap: break-word;
         /* Added */
