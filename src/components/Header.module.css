@@ -63,7 +63,7 @@
 @media (max-width: 768px) {
     .name {
         position: static;
-        margin-left: 90px;
+        margin-left: 110px;
         /* Adjust the margin value as per your preference */
         margin-bottom: 3px;
     }
@@ -91,7 +91,7 @@
         .li-list {
             position: relative;
             transform: translateY(0%);
-            left:9%;
+            left:5%;
             color: black;
         }
     

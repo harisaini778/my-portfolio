@@ -176,41 +176,41 @@
 @media screen and (max-width: 768px) {
   /* Styles for screens up to 768px wide (mobile) */
   .body-img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     left: 50%;
-    transform: translate(-47%,-70%);
+    transform: translate(-47%,-80%);
     animation: raise-body-img 2s ease-in-out;
   }
 @keyframes raise-body-img {
     0% {
-        transform: translate(-47%,-70%);
+        transform: translate(-47%,-80%);
     }
 
     100% {
-        transform: translate(-47%,-73%);
+        transform: translate(-47%,-85%);
     }
 }
   .greetings {
     font-size: 40px;
-    transform: translateY(-60%);
+    transform: translateY(-90%);
     left:40%;
     position: absolute;
     animation: raise-greetings 2s ease-in-out;
   }
   @keyframes raise-greetings {
       0% {
-          transform: translateY(-60%);
+          transform: translateY(-90%);
       }
 
       100% {
-          transform: translateY(-65%);
+          transform: translateY(-100%);
       }
   }
 
   .about {
     font-size: 30px;
-    transform: translateY(70%);
+    transform: translateY(40%);
     left:28%;
     position:absolute;
     animation: raise-about 2s ease-in-out;
@@ -218,46 +218,46 @@
 
   @keyframes raise-about {
     0% {
-        transform: translateY(70%);
+        transform: translateY(40%);
     }
     100% {
-        transform: translateY(50%);
+        transform: translateY(30%);
     }
   }
   .about-des {
     font-size: 12px;
     width: 80%;
     position:absolute;
-    transform: translateY(35%);
+    transform: translateY(25%);
     left:15%;
     animation: raise-about-des 2s ease-in-out;
   }
   @keyframes raise-about-des {
   0%{
-    transform: translateY(35%);
+    transform: translateY(25%);
   }
   100%{
-    transform:translateY(30%);
+    transform:translateY(20%);
   }
   }
 
   .resume-circle,
   .resume-projects,
   .resume-contacts {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     left: 3%;
-    transform: translateY(420%);
-    font-size: 10px;
+    transform: translateY(300%);
+    font-size: 14px;
     margin-left: 4px;
     animation: raise-resume 2s ease-in-out;
   }
   @keyframes raise-resume {
     0%{
-    transform: translateY(420%)
+    transform: translateY(300%)
     }
     100%{
-        transform: translateY(410%)
+        transform: translateY(290%)
     }
   }
   .resume-circle:hover,
