@@ -1,41 +1,80 @@
-.footer-body{
+.footer-body {
     height: 35vh;
     width: 100vw;
     background-color: rgb(242, 240, 240);
 }
+
 .footer-list-ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content:space-around;
-    justify-self: center;
+    justify-content: space-around;
     list-style-type: none;
-    color:grey;
+    color: grey;
     font-weight: 500;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16px;
 }
+
 .linebreak {
     border: 1px solid grey;
     margin: 90px;
     /* Adjust the height to make the line break visible */
 }
-.icon{
+
+.icon {
     display: flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
 }
+
 .icon svg {
     width: 1.5em;
     height: 1.5em;
-    color:black;
+    color: black;
 }
+
 .icon a:not(:last-child) {
     margin-right: 15px;
     margin-top: 5px;
 }
-.footercontacts{
-    color:black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+.footercontacts {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: normal;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    /* Styles for screens up to 768px wide (mobile) */
+    .footer-list-ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .linebreak {
+        margin: 30px 0;
+    }
+
+    .icon {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .icon a:not(:last-child) {
+        margin-right: 15px;
+        margin-top: 0;
+    }
+
+    .icon svg {
+        width: 1.2em;
+        height: 1.2em;
+    }
+
+    .footercontacts {
+        text-align: center;
+    }
 }

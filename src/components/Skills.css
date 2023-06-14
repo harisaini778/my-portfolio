@@ -1,3 +1,4 @@
+/* Styles for the original screen */
 .skills-box {
     width: 100%;
     height: 22px;
@@ -12,14 +13,30 @@
 
 .fill {
     height: 100%;
-    background-color:black;
+    background-color: black;
     transition: width 1s ease-in-out;
     border-right: 1px solid #fff;
     /* Add border style here */
     color: white;
 }
-.skills-title{
+
+.skills-title {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
-    color:grey;
+    color: grey;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    .skills-box {
+        height: 18px;
+        margin-bottom: 8px;
+        margin-top: 8px;
+        /* Adjust the height and margins for smaller screens */
+    }
+
+    .skills-title {
+        font-size: 16px;
+        /* Adjust the font size for smaller screens */
+    }
 }

@@ -1,42 +1,60 @@
+/* Styles for the original screen */
 body {
     overflow-x: hidden;
 }
+
 .resume-container {
     display: grid;
     grid-template-columns: 1.5fr 0.80fr 1.5fr;
-    /* Three equal columns */
     grid-template-rows: 1fr 1fr 1fr;
-    /* Three equal rows */
     gap: 10px;
-    /* Gap between grid items */
     margin: 120px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     position: relative;
-    /* overflow-x: hidden; */
 }
 
 .resume-item {
-    /* border: 1px solid #ccc; */
     padding: 10px;
     text-align: center;
 }
-.last-col-items{
+
+.last-col-items {
     text-align: left;
 }
-.line{
-    margin-top:30px;
+
+.line {
+    margin-top: 30px;
     border: 1px solid grey;
 }
-.skills-list{
+
+.skills-list {
     margin-bottom: -180px;
 }
-.resume-heading{
+
+.resume-heading {
     position: relative;
-    left:19.5%;
+    left: 19.5%;
     transform: translateY(100%);
     font-size: 40px;
 }
-.class{
-    color:gray;
+
+.class {
+    color: gray;
     font-size: medium;
+}
+
+/* Styles for smaller screens */
+@media screen and (max-width: 480px) {
+    .resume-container {
+        margin: 60px;
+    }
+
+    .resume-heading {
+        left: 10%;
+        font-size: 30px;
+    }
+
+    .class {
+        font-size: small;
+    }
 }

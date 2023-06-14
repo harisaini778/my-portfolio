@@ -1,16 +1,24 @@
-.body{
+.body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
 
-.project-container{
+.project-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-area: 1fr 1fr;
-    gap:10px;
+    gap: 10px;
 }
-.project-items{
-    border:1px solid black;
+
+.project-items {
+    border: 1px solid black;
     text-align: center;
     padding: 10px;
+}
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 480px) {
+    .project-container {
+        grid-template-columns: 1fr;
+    }
 }

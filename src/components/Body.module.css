@@ -1,171 +1,209 @@
 .body-main {
-    background-color: rgb(242, 240, 240);
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(242, 240, 240);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .body-img {
-    width: 500px;
-    height: 500px;
-    border-radius: 50%;
-    background-color: #e5e5e5;
-    background-image: url("../assets/my-image/png_20230611_021202_0000.png");
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    left: 8%;
-    transform: translateY(10%);
-    animation: raise-body-img 2s ease-in-out;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  background-image: url("../assets/my-image/png_20230611_021202_0000.png");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 8%;
+  transform: translateY(10%);
+  animation: raise-body-img 2s ease-in-out;
 }
 
 .greetings {
-    font-weight: bolder;
-    font-size: 115px;
-    font-family: 'Ubuntu Mono', monospace;
-    position: absolute;
-    left: 50%;
-    transform: translateY(-175%);
-    animation: raise-greetings 2s ease-in-out;
+  font-weight: bolder;
+  font-size: 115px;
+  font-family: 'Ubuntu Mono', monospace;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-175%);
+  animation: raise-greetings 2s ease-in-out;
 }
 
 .about {
-    font-weight: bold;
-    font-size: 40px;
-    font-family: 'Ubuntu Mono', monospace;
-    position: absolute;
-    left: 50%;
-    transform: translateY(-200%);
-    animation: raise-about 2s ease-in-out;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: 'Ubuntu Mono', monospace;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-200%);
+  animation: raise-about 2s ease-in-out;
 }
 
 .about-des {
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    word-spacing: 5px;
-    position: absolute;
-    left: 50%;
-    transform: translateY(-25%);
-    text-align: justify;
-    line-height: 1.5;
-    width: 40%;
-    animation: raise-about-des 2s ease-in-out;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  word-spacing: 5px;
+  position: absolute;
+  left: 50%;
+  transform: translateY(-25%);
+  text-align: justify;
+  line-height: 1.5;
+  width: 40%;
+  animation: raise-about-des 2s ease-in-out;
 }
 
 .resume-circle {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgb(255, 179, 0);
-    position: relative;
-    left: 15%;
-    transform: translateY(135%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    border: 2px solid black;
-    color: black;
-    text-decoration: none;
-    animation: raise 2s ease-in-out;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(255, 179, 0);
+  position: relative;
+  left: 15%;
+  transform: translateY(135%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  animation: raise 2s ease-in-out;
 }
 
 .resume-projects {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgb(248, 74, 0);
-    position: relative;
-    left: 17%;
-    transform: translateY(135%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    border: 2px solid black;
-    color: black;
-    text-decoration: none;
-    animation: raise 2s ease-in-out;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(248, 74, 0);
+  position: relative;
+  left: 17%;
+  transform: translateY(135%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  animation: raise 2s ease-in-out;
 }
 
 .resume-contacts {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    background-color: rgb(123, 213, 251);
-    position: relative;
-    left: 19%;
-    transform: translateY(135%);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bold;
-    border: 2px solid black;
-    color: black;
-    text-decoration: none;
-    animation: raise 2s ease-in-out;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgb(123, 213, 251);
+  position: relative;
+  left: 19%;
+  transform: translateY(135%);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  border: 2px solid black;
+  color: black;
+  text-decoration: none;
+  animation: raise 2s ease-in-out;
 }
 
 @keyframes raise {
-    0% {
-        transform: translateY(135%);
-    }
+  0% {
+    transform: translateY(135%);
+  }
 
-    100% {
-        transform: translateY(115%);
-    }
+  100% {
+    transform: translateY(115%);
+  }
 }
 
 @keyframes raise-body-img {
-    0% {
-        transform: translateY(10%);
-    }
+  0% {
+    transform: translateY(10%);
+  }
 
-    100% {
-        transform: translateY(0%);
-    }
+  100% {
+    transform: translateY(0%);
+  }
 }
 
 @keyframes raise-greetings {
-    0% {
-        transform: translateY(-190%);
-    }
+  0% {
+    transform: translateY(-190%);
+  }
 
-    100% {
-        transform: translateY(-210%);
-    }
+  100% {
+    transform: translateY(-210%);
+  }
 }
 
 @keyframes raise-about {
-    0% {
-        transform: translateY(-200%);
-    }
+  0% {
+    transform: translateY(-200%);
+  }
 
-    100% {
-        transform: translateY(-260%);
-    }
+  100% {
+    transform: translateY(-260%);
+  }
 }
 
 @keyframes raise-about-des {
-    0% {
-        transform: translateY(-25%);
-    }
+  0% {
+    transform: translateY(-25%);
+  }
 
-    100% {
-        transform: translateY(-45%);
-    }
+  100% {
+    transform: translateY(-45%);
+  }
 }
+
 .resume-circle:hover,
 .resume-projects:hover,
 .resume-contacts:hover {
-    background-color: white;
-    color: black;
+  background-color: white;
+  color: black;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens up to 768px wide (mobile) */
+  .body-img {
+    width: 300px;
+    height: 300px;
+    left: 50%;
+    transform: translate(-50%, 10%);
+  }
+
+  .greetings {
+    font-size: 60px;
+    transform: translateY(-150%);
+  }
+
+  .about {
+    font-size: 30px;
+    transform: translateY(-175%);
+  }
+
+  .about-des {
+    font-size: 12px;
+    width: 80%;
+    transform: translateY(-20%);
+  }
+
+  .resume-circle,
+  .resume-projects,
+  .resume-contacts {
+    width: 100px;
+    height: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
