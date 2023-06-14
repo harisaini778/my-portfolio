@@ -64,7 +64,7 @@
 }
 
 /* Media queries for responsive layout */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .name {
         position: static;
         margin-left: 110px;

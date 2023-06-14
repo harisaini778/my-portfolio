@@ -51,7 +51,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
     
     /* Styles for screens up to 768px wide (mobile) */
     .footer-body {
