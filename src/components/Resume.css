@@ -1,6 +1,7 @@
 /* Styles for the original screen */
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .resume-container {
@@ -45,6 +46,10 @@ body {
 
 /* Styles for smaller screens */
 @media screen and (max-width: 480px) {
+    .body{
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
     .resume-container {
         margin: 60px;
     }
